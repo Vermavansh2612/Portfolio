@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio</title>
+<meta name="description" content="Portfolio deck." />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.png" />
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@900,800,700,500&f[]=satoshi@700,500,400,300&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <span class="preloader-word" id="preloaderWord"></span>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+<noscript><style>.preloader{display:none;} body{overflow:visible !important;}</style></noscript>
+<div class="grain"></div>
+
+<nav class="deck-nav" id="deckNav" aria-label="Section navigation"></nav>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" id="brandLink" href="#home" aria-label="Home">
+      <img src="assets/logo.png" alt="" width="40" height="40" />
+    </a>
+    <nav class="nav-links" id="navLinks"></nav>
+    <button class="menu-toggle" aria-label="Toggle navigation" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<main id="siteMain"></main>
+
+<footer id="footer"></footer>
+<div class="success-modal" id="successModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="successModalTitle">
+  <div class="success-modal-card" id="successModalCard">
+    <div class="success-modal-head">
+      <h3 id="successModalTitle">Message sent.</h3>
+      <button class="modal-close" type="button" id="successModalClose" aria-label="Close message sent modal">&times;</button>
+    </div>
+    <p>Your message has been sent. I will reply within 24 hours.</p>
+    <button class="btn btn-primary" type="button" id="successModalOk">Got it</button>
+  </div>
+</div>
+<div class="success-modal" id="demoModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="demoModalTitle">
+  <div class="success-modal-card" id="demoModalCard">
+    <div class="success-modal-head">
+      <h3 id="demoModalTitle">Demo Offline.</h3>
+      <button class="modal-close" type="button" id="demoModalClose" aria-label="Close demo modal">&times;</button>
+    </div>
+    <p>Live demo isn't available for now. Check back soon, or reach out and I'll walk you through it directly.</p>
+    <button class="btn btn-primary" type="button" id="demoModalOk">Got it</button>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
